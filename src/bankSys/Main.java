@@ -1,47 +1,34 @@
 package bankSys;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application{
 	
-	public static Label status = new Label ("Enter account data");
+	static Stage pstage;
 
 	@Override
-	public void start(Stage stage)  {
+	public void start(Stage main)  {
 	    
-	    Pane pane = new Pane();
-	    
-	    TextField usernameInput = new TextField ();
-	    usernameInput.setPromptText("Username");
-	    TextField passwordInput = new TextField ();
-	    passwordInput.setPromptText("Password");
-	    
-	    Button login = new Button("Login");
-	    login.setOnAction((event) -> {
-	    	System.out.println("Login");
-	    });
-	    
-	    Button signUp = new Button("Sign up");
-	    signUp.setOnAction((event) -> {
-	    	System.out.println("Sign up");
-	    });
-	    
-	    pane.getChildren().add(usernameInput);
-	    pane.getChildren().add(passwordInput);
-	    pane.getChildren().add(login);
-	    pane.getChildren().add(status);
-	    
-	    Scene scene = new Scene (pane,400,400);
-	    
-	    stage.setScene(scene); 
-	    stage.show();
+		pstage=main;
+		changeScene("LoginPage.fxml","Start Screen",400,400);
 		
+	}
+	
+	public void changeScene(String gui,String title,int width,int height) {
+		try {
+			Parent root=FXMLLoader.load(getClass().getResource(gui));//loading FXML
+			Scene scene = new Scene(root,width,height);  //setting size of the window 
+			pstage.setScene(scene);  // setting scene
+			pstage.setTitle(title); //Title of the window
+			pstage.setResizable(false); //Making window non resizable
+			pstage.show();  //Showing window
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void main(String[] args) {
