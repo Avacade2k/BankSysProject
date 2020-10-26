@@ -5,14 +5,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankSys.LoginPage">
    <children>
-      <TextField layoutX="126.0" layoutY="150.0" promptText="username" />
-      <TextField layoutX="125.0" layoutY="187.0" promptText="password" />
-      <Button layoutX="173.0" layoutY="225.0" mnemonicParsing="false" text="Login" />
+      <TextField fx:id="username" layoutX="126.0" layoutY="150.0" promptText="username" />
+      <TextField fx:id="password" layoutX="125.0" layoutY="187.0" promptText="password" />
+      <Button layoutX="173.0" layoutY="225.0" mnemonicParsing="false" text="Login" onAction="#Login" />
       <Label layoutX="290.0" layoutY="28.0" text="No account?" />
-      <Button layoutX="296.0" layoutY="52.0" mnemonicParsing="false" text="Sign up" />
+      <Button layoutX="296.0" layoutY="52.0" mnemonicParsing="false" text="Sign up" onAction="#toRegister" />
       <Label layoutX="150.0" layoutY="119.0" text="Enter account data" />
    </children>
 </AnchorPane>

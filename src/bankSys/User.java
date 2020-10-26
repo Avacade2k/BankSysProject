@@ -21,6 +21,8 @@ public class User {
 		this.gender = gender;
 		this.balance=0.00;
 	}
+	
+	//getters setters
 
 	public String getUsername() {
 		return username;

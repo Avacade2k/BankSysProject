@@ -5,13 +5,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankSys.SignUp">
    <children>
       <Button layoutX="174.0" layoutY="251.0" mnemonicParsing="false" text="Sign up" />
-      <TextField layoutX="126.0" layoutY="174.0" promptText="Last name" />
-      <TextField layoutX="126.0" layoutY="137.0" promptText="First name" />
-      <TextField layoutX="126.0" layoutY="101.0" promptText="Password" />
-      <TextField layoutX="125.0" layoutY="67.0" promptText="Username" />
-      <ChoiceBox layoutX="125.0" layoutY="214.0" prefWidth="150.0"/>
+      <TextField fx:id="lname" layoutX="126.0" layoutY="174.0" promptText="Last name" />
+      <TextField fx:id="fname" layoutX="126.0" layoutY="137.0" promptText="First name" />
+      <PasswordField fx:id="password" layoutX="126.0" layoutY="101.0" promptText="Password" />
+      <TextField fx:id="username" layoutX="125.0" layoutY="67.0" promptText="Username" />
+      <ChoiceBox layoutX="125.0" layoutY="214.0" prefWidth="150.0" />
+      <Button layoutX="34.0" layoutY="22.0" mnemonicParsing="false" text="Back" onAction="#back" />
    </children>
 </AnchorPane>
