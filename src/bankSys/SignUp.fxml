@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankSys.SignUp">
    <children>
-      <Button layoutX="174.0" layoutY="251.0" mnemonicParsing="false" text="Sign up" />
+      <Button layoutX="174.0" layoutY="251.0" mnemonicParsing="false" text="Sign up" onAction="#signUp" />
       <TextField fx:id="lname" layoutX="126.0" layoutY="174.0" promptText="Last name" />
       <TextField fx:id="fname" layoutX="126.0" layoutY="137.0" promptText="First name" />
       <PasswordField fx:id="password" layoutX="126.0" layoutY="101.0" promptText="Password" />
       <TextField fx:id="username" layoutX="125.0" layoutY="67.0" promptText="Username" />
-      <ChoiceBox layoutX="125.0" layoutY="214.0" prefWidth="150.0" />
       <Button layoutX="34.0" layoutY="22.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <ComboBox fx:id="gender" layoutX="127.0" layoutY="212.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

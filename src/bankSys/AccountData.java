@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
-public class DepositWithdraw implements Initializable{
+public class AccountData implements Initializable{
 	
 	@FXML
 	Button balanceBtn, depositBtn, dataBtn;

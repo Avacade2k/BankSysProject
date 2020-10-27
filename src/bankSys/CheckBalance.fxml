@@ -9,10 +9,10 @@
    <children>
       <VBox layoutX="14.0" layoutY="54.0" prefHeight="74.0" prefWidth="110.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Check balance" onAction="#checkBalance"/>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Deposit/withdraw" onAction="#depositWithdraw"/>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Account data" />
-         </children>
+            	<Button fx:id="balanceBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Check balance"/>
+            	<Button fx:id="depositBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Deposit/withdraw" />
+            	<Button fx:id="dataBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Account data"/>
+         	</children>
       </VBox>
       <Label fx:id="balanceStatus" alignment="CENTER" layoutX="150.0" layoutY="185.0" prefHeight="30.0" prefWidth="100.0" text="x" textAlignment="CENTER" />
       <Label fx:id="userData" alignment="CENTER" layoutX="140.0" layoutY="24.0" prefHeight="30.0" prefWidth="120.0" text="User" textAlignment="CENTER" />
