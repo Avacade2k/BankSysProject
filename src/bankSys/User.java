@@ -14,8 +14,8 @@ public class User {
 		this.password=password;
 	}
 	
-	public User(String username, String password, String fname, String lname, String gender, Double balance) {
-		this(username,password);
+	public User(String username, String fname, String lname, String gender, Double balance) {
+		this.username = username;
 		this.fname = fname;
 		this.lname = lname;
 		this.gender = gender;

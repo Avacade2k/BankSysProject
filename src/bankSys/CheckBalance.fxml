@@ -5,18 +5,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="BankSys.CheckBalance">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankSys.CheckBalance">
    <children>
-      <VBox layoutX="28.0" layoutY="161.0" prefHeight="60.0" prefWidth="80.0">
+      <VBox layoutX="14.0" layoutY="54.0" prefHeight="74.0" prefWidth="110.0">
          <children>
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Check balance" onAction="#checkBalance"/>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Deposit/withdraw" onAction="#depositWithdraw"/>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Account data" />
          </children>
       </VBox>
-      <Label fx:id="balanceStatus" layoutX="179.0" layoutY="191.0" text="Balance" />
-      <Label fx:id="userData" layoutX="358.0" layoutY="18.0" text="User" />
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Sign out" onAction="#signOut" />
+      <Label fx:id="balanceStatus" alignment="CENTER" layoutX="150.0" layoutY="185.0" prefHeight="30.0" prefWidth="100.0" text="x" textAlignment="CENTER" />
+      <Label fx:id="userData" alignment="CENTER" layoutX="140.0" layoutY="24.0" prefHeight="30.0" prefWidth="120.0" text="User" textAlignment="CENTER" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#signOut" text="Sign out" />
+      <Label alignment="CENTER" layoutX="158.0" layoutY="167.0" text="Current Balance" textAlignment="CENTER" />
    </children>
 </AnchorPane>
