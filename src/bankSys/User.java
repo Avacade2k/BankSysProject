@@ -19,7 +19,7 @@ public class User {
 		this.fname = fname;
 		this.lname = lname;
 		this.gender = gender;
-		this.balance=0.00;
+		this.balance= balance;
 	}
 	
 	//getters setters
