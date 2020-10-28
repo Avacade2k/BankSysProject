@@ -9,10 +9,13 @@
    <children>
       <VBox layoutX="14.0" layoutY="54.0" prefHeight="74.0" prefWidth="110.0">
          <children>
-            	<Button fx:id="balanceBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Check balance"/>
+            	<Button fx:id="balanceBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Check balance" />
             	<Button fx:id="depositBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Deposit/withdraw" />
-            	<Button fx:id="dataBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Account data"/>
+            	<Button fx:id="dataBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Account data" />
          	</children>
       </VBox>
+      <Label fx:id="gender" layoutX="186.0" layoutY="231.0" text="Gender" />
+      <Label fx:id="name" layoutX="186.0" layoutY="200.0" text="Fname + Lname" />
+      <Label fx:id="user" layoutX="186.0" layoutY="172.0" text="Username" />
    </children>
 </AnchorPane>
