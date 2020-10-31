@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 public class AccountData implements Initializable{
 	
 	@FXML
-	Button balanceBtn, depositBtn, dataBtn;
+	Button balanceBtn, depositBtn, dataBtn, transferBtn;
 	
 	@FXML
 	Label gender, name, user;
@@ -23,7 +23,7 @@ public class AccountData implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		try {
 			CheckBalance cb = new CheckBalance();
-			cb.setButtons(balanceBtn, depositBtn, dataBtn);
+			cb.setButtons(balanceBtn, depositBtn, dataBtn, transferBtn);
 			User currentUser = LoginPage.getUser(LoginPage.uname);
 			gender.setText(currentUser.getGender());
 			name.setText(currentUser.getFname() + " " + currentUser.getLname());

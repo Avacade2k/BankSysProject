@@ -15,7 +15,7 @@ import javafx.scene.control.TextField;
 public class DepositWithdraw implements Initializable{
 	
 	@FXML
-	Button balanceBtn, depositBtn, dataBtn;
+	Button balanceBtn, depositBtn, dataBtn, transferBtn;
 	
 	@FXML
 	Button chooseDeposit, chooseWithdraw, submitBtn;
@@ -35,7 +35,7 @@ public class DepositWithdraw implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		try {
 			CheckBalance cb = new CheckBalance();
-			cb.setButtons(balanceBtn, depositBtn, dataBtn);
+			cb.setButtons(balanceBtn, depositBtn, dataBtn, transferBtn);
 			currentUser = LoginPage.getUser(LoginPage.uname);
 		} catch (SQLException e) {
 			e.printStackTrace();

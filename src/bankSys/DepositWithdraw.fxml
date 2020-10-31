@@ -8,10 +8,11 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankSys.DepositWithdraw">
 	<children>
-		<VBox layoutX="14.0" layoutY="54.0" prefHeight="74.0" prefWidth="110.0">
+		<VBox layoutX="14.0" layoutY="54.0" prefHeight="120.0" prefWidth="110.0">
          	<children>
             	<Button fx:id="balanceBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Check balance" />
             	<Button fx:id="depositBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Deposit/withdraw" />
+            	<Button fx:id="transferBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Transfer" />
             	<Button fx:id="dataBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Account data" />
          	</children>
       	</VBox>

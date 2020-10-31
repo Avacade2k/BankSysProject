@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class LoginPage {
@@ -12,7 +13,7 @@ public class LoginPage {
 	@FXML
 	TextField username;
 	@FXML
-	TextField password;
+	PasswordField password;
 	
 	public static String uname;
 	

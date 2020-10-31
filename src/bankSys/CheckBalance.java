@@ -12,7 +12,7 @@ import javafx.scene.control.Label;
 public class CheckBalance implements Initializable {
 	
 	@FXML
-	Button balanceBtn, depositBtn, dataBtn;
+	Button balanceBtn, depositBtn, dataBtn, transferBtn;
 	
 	@FXML
 	Label balanceStatus, userData;
@@ -30,7 +30,7 @@ public class CheckBalance implements Initializable {
 		new Main().changeScene("LoginPage.fxml", "Login page", 400, 400);
 	}
 	
-	public void setButtons(Button balance, Button deposit, Button data) {
+	public void setButtons(Button balance, Button deposit, Button data, Button transfer) {
 		balance.setOnAction((e) -> {
 			System.out.println("Checking balance");
 			new Main().changeScene("CheckBalance.fxml", "Main", 400, 400);
@@ -43,13 +43,17 @@ public class CheckBalance implements Initializable {
 			System.out.println("Bringing account data");
 			new Main().changeScene("AccountData.fxml", "Account data", 400, 400);
 			});
+		transfer.setOnAction((e) -> {
+			System.out.println("Went to transfer");
+			new Main().changeScene("Transfer.fxml", "Transfer", 400, 400);
+		});
 	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		try {
 			checkBalance();
-			setButtons(balanceBtn, depositBtn, dataBtn);
+			setButtons(balanceBtn, depositBtn, dataBtn, transferBtn);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

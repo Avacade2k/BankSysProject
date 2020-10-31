@@ -2,16 +2,17 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankSys.LoginPage">
    <children>
       <TextField fx:id="username" layoutX="126.0" layoutY="150.0" promptText="username" />
-      <TextField fx:id="password" layoutX="125.0" layoutY="187.0" promptText="password" />
-      <Button layoutX="173.0" layoutY="225.0" mnemonicParsing="false" text="Login" onAction="#Login" />
+      <PasswordField fx:id="password" layoutX="125.0" layoutY="187.0" promptText="password" />
+      <Button layoutX="173.0" layoutY="225.0" mnemonicParsing="false" onAction="#Login" text="Login" />
       <Label layoutX="290.0" layoutY="28.0" text="No account?" />
-      <Button layoutX="296.0" layoutY="52.0" mnemonicParsing="false" text="Sign up" onAction="#toRegister" />
+      <Button layoutX="296.0" layoutY="52.0" mnemonicParsing="false" onAction="#toRegister" text="Sign up" />
       <Label layoutX="150.0" layoutY="119.0" text="Enter account data" />
    </children>
 </AnchorPane>
